@@ -1,0 +1,5 @@
+dataset,n,counterfactual_correct,counterfactual_accuracy,prediction_flips,prediction_flip_rate
+CommonsenseQA,10,10,1.0,10,1.0
+QNLI,10,10,1.0,10,1.0
+SST-2,10,10,1.0,10,1.0
+Overall,30,30,1.0,30,1.0
