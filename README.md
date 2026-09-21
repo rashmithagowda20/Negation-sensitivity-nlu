@@ -59,11 +59,26 @@ No statistically significant performance difference was observed across the thre
 - `negation_analysis_reproduce.py` — analysis script
 - `requirements.txt` — required Python packages
 
-## Counterfactual Intervention
+## Counterfactual Negation Intervention
 
-A secondary counterfactual experiment was prepared using 30 important-negation examples, with 10 examples from each task.
+A secondary controlled experiment was conducted on 30 important-negation
+examples, with 10 examples selected from each task: QNLI, CommonsenseQA,
+and SST-2.
 
-The blinded intervention file is included for a fresh evaluation run.
+Negation was minimally removed or reversed, and the modified examples were
+evaluated in a separate blinded zero-shot run.
+
+Results:
+
+- QNLI: 10/10 counterfactual predictions correct
+- CommonsenseQA: 10/10 counterfactual predictions correct
+- SST-2: 10/10 counterfactual predictions correct
+- Overall counterfactual accuracy: 100%
+- Prediction flip rate: 100%
+
+Because this experiment uses a small selected subset of originally correct
+important-negation examples, the result should not be interpreted as evidence
+that the model handles negation perfectly in general.
 
 ## Source
 
