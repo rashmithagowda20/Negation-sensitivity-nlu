@@ -83,3 +83,16 @@ Install the required packages with:
 
 ```bash
 pip install -r requirements.txt
+
+### Verified Reproduction
+
+The analysis script was rerun independently in Google Colab using Python 3.
+The reproduced results matched the reported experiment:
+
+- Important negation accuracy: 90.4%
+- Unimportant negation accuracy: 91.4%
+- Total evaluation examples: 396
+- Total incorrect predictions: 36
+
+No statistically significant important-vs.-unimportant accuracy difference
+was observed for QNLI, CommonsenseQA, or SST-2 after Holm correction.
